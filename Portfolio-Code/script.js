@@ -1,5 +1,5 @@
-// Año dinámico del footer
+// Año dinámico en el footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Mensaje para ti :)
-console.log("¡Listo! Estructura base cargada. 💜");
+// Mensaje para consola
+console.log("Portafolio base cargado. ✨");

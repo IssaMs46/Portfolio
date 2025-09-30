@@ -73,7 +73,7 @@ body {
 
 .profile-img {
   display: block;
-  width: min(30vw, 280px); /* <-- ajusta el tamaño a tu gusto */
+  width: min(30vw, 280px);
   height: auto;
   border-radius: 20px;
   outline: 2px solid rgba(164, 93, 230, 0.25);
@@ -90,7 +90,7 @@ body {
 }
 .intro-box {
   max-width: 700px;
-  background: #2a003f;  /* cambia este color si quieres otro fondo para la caja */
+  background: #2a003f;
   padding: 30px 40px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
@@ -280,21 +280,25 @@ body {
   object-fit: cover;
   border: 1px solid rgba(255,255,255,0.1);
 }
+
+/* 🎥 Video responsivo YouTube */
 .video {
-  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%; /* Proporción 16:9 */
+  height: 0;
+  overflow: hidden;
   margin-bottom: 32px;
 }
-.video a {
-  font-size: 1.1rem;
-  color: #fff;
-  background: var(--purple-header);
-  padding: 12px 20px;
-  border-radius: 10px;
-  text-decoration: none;
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: none;
 }
-.video a:hover {
-  background: var(--purple-accent);
-}
+
 .project-info ul {
   list-style: none;
   margin: 0;

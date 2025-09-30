@@ -255,3 +255,59 @@ body {
   .cards-grid { grid-template-columns: 1fr; }
   .icon-list  { grid-template-columns: repeat(2, minmax(120px,1fr)); }
 }
+
+
+/* ===== Detalle de proyecto ===== */
+.project-detail {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.project-detail h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  color: var(--purple-accent);
+}
+.carousel {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.carousel img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.video {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.video a {
+  font-size: 1.1rem;
+  color: #fff;
+  background: var(--purple-header);
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.video a:hover {
+  background: var(--purple-accent);
+}
+.project-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.project-info li {
+  margin: 6px 0;
+}
+.project-desc {
+  margin-top: 24px;
+  text-align: justify;
+}
+.back-btn {
+  text-align: center;
+  margin-top: 32px;
+}
